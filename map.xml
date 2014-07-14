@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<map proto="1.3.3">
+<name>Antiquated</name>
+<version>1.1.0</version>
+<objective>Destroy Both Enemy Monuments In Their Entirety.</objective>
+<authors>
+    <author>K3wlDud3</author>
+</authors>
+<contributors>
+    <contributor contribution="Aesthetics">scorch1183</contributor>
+</contributors>
+<rules>
+    <rule>No Chaos Cannons!</rule>
+</rules>
+<teams>
+   <team color="purple" max="16" max-overfill="20">Purple Team</team>
+   <team color="yellow" max="16" max-overfill="20">Yellow Team</team>
+</teams>
+<spawns>
+    <spawn team="yellow" kit="yellow" safe="true">
+        <cuboid min="7,2,80" max="2,2,75"/>
+    </spawn>
+    <spawn team="purple" kit="purple" safe="true">
+        <cuboid min="2,2,-69" max="7,2,-64"/>
+    </spawn>
+    <default yaw="90">
+        <cuboid min="54,28,7" max="57,28,4"/>
+    </default>
+</spawns>
+<kits>
+    <kit name="spawn" force="true">
+        <item slot="0" amount="1">iron sword</item>
+        <item slot="1" amount="1">bow</item>
+        <chestplate enchantment="protection explosion:2">chainmail chestplate</chestplate>
+		<item slot="2" amount="1" item enchantment=dig speed:3>iron pickaxe</item>
+		<item slot="3" amount="64">tnt</item>
+		<item slot="5" amount="64">redstone</item>
+		<item slot="6" amount="1">water bucket</item>
+		<item slot="7" amount="32">raw salmon</item>
+		<item slot="8" amount="32">ladder</item>
+		<item slot="30" amount="64">tnt</item>
+		<item slot="35" amount="32">fence</item>
+		<item slot="32" amount="32">stone button</item>
+		<item slot="33" amount="1">water bucket</item>
+		<item slot="9" amount="64">arrow</item>
+		<item slot="17" amount="1" lore="`6Right Click To Defuse TNT!|`4Does Not Work In Water! name="`6TNT Defusers>shear</item>
+    </kit>
+    <kit name="purple" parents="spawn">
+        <helmet color="7F3FB2">leather helmet</helmet>
+		<boots color="7F3FB2">leather boots</boots>
+		<item slot="4" damage="10">stained clay</item>
+		<item slot="31" damage="10">stained glass</item>
+    </kit>
+    <kit name="yellow" parents="spawn">
+        <helmet color="0E5E533">leather helmet</helmet>
+		<boots color="0E5E533">leather helmet</helmet>
+		<item slot="4" damage="4">stained clay</item>
+		<item slot="31" damage="4">stained glass</item>
+    </kit>
+</kits>
+<destroyables name="Monument A" materials="obsidian" completion="100%" mode-changes="true" show=progress="true" repairable="false">
+    <destroyable owner="purple">
+       <cuboid min="14,36,-77" max="16,38,-75"/>
+    </destroyable>
+    <destroyable owner="yellow">
+       <cuboid min="-38,36,88" max="-40,38,90"/>
+    </destroyable>
+</destroyables>
+<destroyables name="Monument B" materials="obsidian" completion="100%" mode-changes="true">
+    <destroyable owner="purple">
+       <cuboid min="-38,35,-75" max="-40,37,-77"/>
+    </destroyable>
+    <destroyable owner="yellow">
+       <cuboid min="14,35,88" max="16,37,90"/>
+    </destroyable>
+</destroyables>
+<modes>
+    <mode after="5m" material="coal block"/>
+</modes>
+<filters>
+    <filter name="only-yellow">
+        <team>yellow</team>
+    </filter>
+    <filter name="only-purple">
+        <team>purple</team>
+    </filter>
+</filters>
+<regions>
+    <rectangle name="main-area" min="26,-106" max="-50,118"/>
+    <cuboid name="yellow-spawn" min="-20,0,45" max="-4,oo,61"/>
+    <cuboid name="purple-spawn" min="-4,0,-32" max="-20,oo,-48"/>
+    <apply block="deny-blocks" message="you may not break blocks in spawn!">
+        <region name="yellow-spawn"/>
+    </apply>
+    <apply enter="only-yellow" message="you may not enter the enemy teams base!">
+        <region name="yellow-spawn"/>
+    </apply>
+    <apply block="deny-blocks" message="you may not break blocks in spawn!">
+        <region name="purple-spawn"/>
+    </apply>
+    <apply enter="only-purple" message="you may not enter the enemy teams base!">
+        <region name="yellow-purple"/>
+    </apply>
+    <apply block="deny-blocks" message="you may not leave the playing field">
+        <negative>
+            <region name="main-area"/>
+        </negative>
+    </apply>
+</regions>
+<toolrepair>
+    <tool>iron sword</tool>
+	<tool>bow</tool>
+    <tool>iron pickaxe</tool>
+</toolrepair>
+<itemremove>
+    <item>arrow</item>
+    <item>raw salmon</item>
+    <item>tnt</item>
+    <item>chainmail chestplate</item>
+	<item>iron sword</item>
+	<item>leather helemt</item>
+	<item>leather boots</item>
+	<item>bow</item>
+	<item>redstone</item>
+	<item>stone button</item>
+	<item>ladder</item>
+	<item>fence</item>
+	<item>water bucket</item>
+	<item>shear</item>
+	<item>iron pickaxe</item>
+	<item>stained clay</item>
+	<item>stained glass</item>
+</itemremove>
+<killreward>
+    <item amount="2">golden apple</item>
+	<item amoung="1" damage="16421">373</item>
+</killreward>
+<gamerules>
+    <doDaylightCycle>false</doDaylightCycle>
+</gamerules>
+<maxbuildheight>50</maxbuildheight>
+</map>
