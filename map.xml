@@ -135,8 +135,6 @@
     <item amount="2">golden apple</item>
 	<item amoung="1" damage="16421">373</item>
 </killreward>
-<gamerules>
-    <doDaylightCycle>false</doDaylightCycle>
-</gamerules>
+<timelock>on</timelock>
 <maxbuildheight>50</maxbuildheight>
 </map>
