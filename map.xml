@@ -32,18 +32,18 @@
         <item slot="0" amount="1">iron sword</item>
         <item slot="1" amount="1">bow</item>
         <chestplate enchantment="protection explosion:2">chainmail chestplate</chestplate>
-		<item slot="2" amount="1" item enchantment=dig speed:3>iron pickaxe</item>
-		<item slot="3" amount="64">tnt</item>
-		<item slot="5" amount="64">redstone</item>
-		<item slot="6" amount="1">water bucket</item>
-		<item slot="7" amount="32">raw salmon</item>
-		<item slot="8" amount="32">ladder</item>
-		<item slot="30" amount="64">tnt</item>
-		<item slot="35" amount="32">fence</item>
-		<item slot="32" amount="32">stone button</item>
-		<item slot="33" amount="1">water bucket</item>
-		<item slot="9" amount="64">arrow</item>
-		<item slot="17" amount="1" lore="`6Right Click To Defuse TNT!|`4Does Not Work In Water! name="`6TNT Defusers>shear</item>
+        <item slot="2" amount="1" item enchantment=dig speed:3>iron pickaxe</item>
+        <item slot="3" amount="64">tnt</item>
+        <item slot="5" amount="64">redstone</item>
+        <item slot="6" amount="1">water bucket</item>
+        <item slot="7" amount="32">raw salmon</item>
+        <item slot="8" amount="32">ladder</item>
+        <item slot="30" amount="64">tnt</item>
+        <item slot="35" amount="32">fence</item>
+        <item slot="32" amount="32">stone button</item>
+        <item slot="33" amount="1">water bucket</item>
+        <item slot="9" amount="64">arrow</item>
+        <item slot="17" amount="1" lore="`6Right Click To Defuse TNT!|`4Does Not Work In Water! name="`6TNT Defusers>shear</item>
     </kit>
     <kit name="purple" parents="spawn">
         <helmet color="7F3FB2">leather helmet</helmet>
@@ -117,23 +117,23 @@
     <item>raw salmon</item>
     <item>tnt</item>
     <item>chainmail chestplate</item>
-	<item>iron sword</item>
-	<item>leather helemt</item>
-	<item>leather boots</item>
-	<item>bow</item>
-	<item>redstone</item>
-	<item>stone button</item>
-	<item>ladder</item>
-	<item>fence</item>
-	<item>water bucket</item>
-	<item>shear</item>
-	<item>iron pickaxe</item>
-	<item>stained clay</item>
-	<item>stained glass</item>
+    <item>iron sword</item>
+    <item>leather helemt</item>
+    <item>leather boots</item>
+    <item>bow</item>
+    <item>redstone</item>
+    <item>stone button</item>
+    <item>ladder</item>
+    <item>fence</item>
+    <item>water bucket</item>
+    <item>shear</item>
+    <item>iron pickaxe</item>
+    <item>stained clay</item>
+    <item>stained glass</item>
 </itemremove>
 <killreward>
     <item amount="2">golden apple</item>
-	<item amoung="1" damage="16421">373</item>
+    <item amount="1" damage="16421">373</item>
 </killreward>
 <timelock>on</timelock>
 <maxbuildheight>50</maxbuildheight>
