@@ -4,10 +4,11 @@
 <version>1.1.0</version>
 <objective>Destroy Both Enemy Monuments In Their Entirety.</objective>
 <authors>
-    <author>K3wlDud3</author>
+    <author>Matig</author>
 </authors>
 <contributors>
-    <contributor contribution="Aesthetics">scorch1183</contributor>
+    <contributor contribution="Aesthetics">Thieved</contributor>
+    <contributor contribution="Is Thieved :P">Niftie</contributor>
 </contributors>
 <rules>
     <rule>No Chaos Cannons!</rule>
