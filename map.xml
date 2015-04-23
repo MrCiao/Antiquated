@@ -14,8 +14,8 @@
     <rule>No Chaos Cannons!</rule>
 </rules>
 <teams>
-   <team color="purple" max="16" max-overfill="20">Purple Team</team>
-   <team color="yellow" max="16" max-overfill="20">Yellow Team</team>
+   <team color="purple" max="18" max-overfill="24">Purple Team</team>
+   <team color="yellow" max="18" max-overfill="24">Yellow Team</team>
 </teams>
 <spawns>
     <spawn team="yellow" kit="yellow" safe="true">
